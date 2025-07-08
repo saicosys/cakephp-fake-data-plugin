@@ -1,0 +1,8 @@
+# Changelog - Saicosys/FakeData
+
+## [1.0.0] - 2025-07-08
+### Added
+- Initial plugin structure
+- CLI Command to generate fake data
+- Model existence check before generation
+- Faker integration
