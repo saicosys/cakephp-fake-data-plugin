@@ -1,0 +1,42 @@
+{
+    "name": "saicosys/cakephp-fake-data-plugin",
+    "description": "Fake data generator plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "keywords": ["cakephp", "faker", "fakedata", "fake data", "mock data"],
+    "authors": [
+        {
+            "name": "Saicosys",
+            "email": "info@saicosys.com",
+            "homepage": "https://www.saicosys.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "cakephp/cakephp": "5.1.*"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "phpunit/phpunit": "^10.5.5 || ^11.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saicosys\\FakeData\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saicosys\\FakeData\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@test",
+            "@cs-check"
+        ],
+        "cs-check": "phpcs --colors -p --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests",
+        "cs-fix": "phpcbf --colors --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests"
+    }
+}

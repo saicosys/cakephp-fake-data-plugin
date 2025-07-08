@@ -6,3 +6,7 @@
 - CLI Command to generate fake data
 - Model existence check before generation
 - Faker integration
+
+## [1.0.1] - 2025-07-08
+### Added
+- Add composer.json and phpunit.xml.dist

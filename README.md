@@ -2,10 +2,6 @@
 
 *A lightweight CakePHP 5 plugin to generate and insert fake data into valid models only.*
 
-## Table of contents
-
-[TOC]
-
 ## Introduction
 
 `Saicosys/FakeData` is a CakePHP 5 plugin designed to help developers and testers quickly generate and populate fake data into any existing model. It uses the own dummy content to generating realistic test data, while ensuring only valid models are targeted to maintain safety and structure.
